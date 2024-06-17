@@ -1,0 +1,44 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.8",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.5",
+    "@mui/icons-material": "5.15.20",
+    "@wits/next-themes": "0.2.16",
+    "next": "14.2.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-icons": "5.2.1",
+    "react-responsive": "10.0.0",
+    "tailwind-merge": "2.3.0",
+    "tailwindcss": "3.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.2",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@types/react-modal": "3.16.3",
+    "@typescript-eslint/eslint-plugin": "7.13.0",
+    "@typescript-eslint/parser": "7.13.0",
+    "autoprefixer": "10.4.19",
+    "cssnano": "7.0.2",
+    "eslint": "9.5.0",
+    "eslint-config-next": "14.2.4",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-unused-imports": "4.0.0",
+    "postcss": "8.4.38",
+    "prettier": "3.3.2",
+    "tailwindcss": "3.3.5",
+    "typescript": "5.4.5"
+  }
+}

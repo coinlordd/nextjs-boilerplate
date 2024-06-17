@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply antialiased;
+  @apply font-sans;
+}
+
+/* Scrollbar */
+* {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* Make content unclickable */
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/* Flex */
+.body-container {
+  @apply max-w-[1280px] w-full mx-auto px-5;
+}
+.row-start {
+  @apply flex flex-row w-full justify-start items-center gap-2;
+}
+.row-center {
+  @apply flex flex-row w-full justify-center items-center gap-2;
+}
+.row-between {
+  @apply flex flex-row w-full justify-between items-center gap-2;
+}
+.row-end {
+  @apply flex flex-row w-full justify-end items-center gap-2;
+}
+.col-start {
+  @apply flex flex-col w-full justify-start items-start gap-2;
+}
+.col-center {
+  @apply flex flex-col w-full justify-center items-center gap-2;
+}
+
+/* Button Overflow */
+.btn-ellipsis {
+  @apply whitespace-nowrap text-ellipsis overflow-hidden;
+}
+
+/* Table CSS */
+.grid-container {
+  @apply border border-primary rounded-xl overflow-hidden;
+}
+.grid-title {
+  @apply border-b border-primary text-sm font-bold py-2 px-3 md:py-5 md:px-5 md:text-md;
+}
+.grid-header {
+  @apply border-primary font-semibold text-sm px-3 py-3 md:px-5 lg:py-5;
+}
+.grid-item {
+  @apply border-t border-primary hover-primary text-sm px-3 py-3 md:px-5 md:py-5;
+}
+.grid-empty-row {
+  @apply w-full border-t border-primary px-5 py-5 md:px-8 md:py-5;
+}
+
+/* Backgrounds */
+.bg-primary {
+  @apply bg-white dark:bg-black;
+}
+.bg-secondary {
+  @apply bg-gray-100 dark:bg-gray-950;
+}
+.bg-tertiary {
+  @apply bg-gray-200 dark:bg-gray-800;
+}
+
+/* Borders */
+.border-primary {
+  @apply border-gray-200 dark:border-gray-900;
+}
+
+.border-secondary {
+  @apply border-gray-300 dark:border-gray-800;
+}
+
+/* Hovers */
+.hover-primary {
+  @apply group-hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-950 dark:group-hover:bg-gray-950;
+}
+
+.hover-secondary {
+  @apply group-hover:bg-gray-200 hover:bg-gray-200 dark:hover:bg-gray-900 dark:group-hover:bg-gray-900;
+}
